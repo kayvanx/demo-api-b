@@ -30,7 +30,7 @@ const authenticateJWT = (req, res, next) => {
 };
 
 // Using a regular expression for the endpoint URL
-app.post('/api/updatePaymentInfoById/.*', authenticateJWT, (req, res) => {
+app.put('/api/v2/updatePaymentInfoById/{DYN}', authenticateJWT, (req, res) => {
   const {
     email,
     'first-name': firstName,
