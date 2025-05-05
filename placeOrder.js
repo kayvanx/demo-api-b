@@ -4,7 +4,7 @@ const app = express();
 
 app.use(express.json());
 
-app.post('/api/placeOrder', (req, res) => {
+app.post('/api/v2/placeOrder', (req, res) => {
   const {
     'product-code': productCode,
     'quantity-amount': quantityAmount,
